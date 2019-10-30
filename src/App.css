@@ -20,3 +20,20 @@
 .App-link {
   color: #09d3ac;
 }
+
+
+form input {
+  margin-top: 20px;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+button {
+  border: 1px solid #282c34;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+ul li {
+  text-align: left;
+}

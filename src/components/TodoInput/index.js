@@ -2,12 +2,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { setTodoItem, addTodo } from '../../redux/actions/todo';
 
-const TodoInput = ({ addTodo, setTodoItem }) => {
+const TodoInput = ({ addTodo, setTodoItem, todoItem }) => {
     return (
         <form onSubmit={(ev) => { ev.preventDefault(); addTodo() }}>
             <input
                 type="text"
                 value={todoItem}
+                placeholder="Todo item"
                 onChange={(ev) => setTodoItem(ev.target.value)}
             />
         </form>
